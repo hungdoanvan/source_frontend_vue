@@ -1,5 +1,6 @@
-import env from "./constants";
+import constants from "./constants";
+import dbConfig from "./database/config.json";
 import router from "./router";
 import store from "./store";
 
-export { env, router, store };
+export { constants, dbConfig, router, store };
