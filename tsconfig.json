@@ -14,6 +14,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "declaration": true,
+    "resolveJsonModule": true,
     "declarationDir": "./types",
     "types": ["webpack-env"],
     "paths": {
@@ -28,5 +29,5 @@
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/db/migrations"]
 }

@@ -19,8 +19,8 @@
       "source.organizeImports": true
     }
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.importModuleSpecifier": "relative"
