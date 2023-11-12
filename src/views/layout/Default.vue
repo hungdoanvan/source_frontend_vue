@@ -4,7 +4,7 @@
       <Sidebar />
 
       <div
-        class="w-full bg-gray-100 pl-64 min-h-screen"
+        class="w-full bg-gray-100 pl-0 lg:pl-64 min-h-screen"
         :class="sideBarOpen ? 'overlay' : ''"
         id="main-content"
       >
