@@ -18,6 +18,8 @@
   "main": "background.js",
   "dependencies": {
     "@types/sequelize": "4",
+    "chart.js": "^2.9.4",
+    "vue-chartjs": "^3.5.0",
     "core-js": "^3.8.3",
     "sequelize": "4",
     "sequelize-cli": "^6.6.2",
@@ -48,9 +50,9 @@
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "sequelize-cli-typescript": "^3.2.0-c",
-    "vue-cli-plugin-electron-builder": "~2.1.1",
     "tailwindcss": "^3.3.5",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
   },
   "eslintConfig": {
     "root": true,
