@@ -90,14 +90,24 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "NavBar",
+
+  computed: {
+    ...mapState(["sideBarOpen"]),
+  },
 
   data() {
     return {
       dropDownOpen: false,
     };
   },
-  methods: {},
+  methods: {
+    toggleSidebar() {
+      this.$store.dispatch("toggleSidebar");
+    },
+  },
 };
 </script>

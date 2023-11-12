@@ -3,7 +3,11 @@
     <div class="flex flex-wrap">
       <Sidebar />
 
-      <div class="w-full bg-gray-100 pl-64 min-h-screen" id="main-content">
+      <div
+        class="w-full bg-gray-100 pl-64 min-h-screen"
+        :class="sideBarOpen ? 'overlay' : ''"
+        id="main-content"
+      >
         <Navbar />
 
         <div class="p-6 bg-gray-100 mb-20">
@@ -20,9 +24,13 @@
 import Sidebar from "@/views/components/Sidebar.vue";
 import Navbar from "@/views/components/Navbar.vue";
 import Footer from "@/views/components/Footer.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "DefaultLayout",
+  computed: {
+    ...mapState(["sideBarOpen"]),
+  },
   components: {
     Sidebar,
     Navbar,
