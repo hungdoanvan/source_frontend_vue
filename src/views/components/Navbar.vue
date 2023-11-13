@@ -1,7 +1,7 @@
 <template>
   <div class="sticky top-0 z-40">
     <div
-      class="w-full h-20 px-6 bg-gray-100 border-b flex items-center justify-between"
+      class="w-full h-20 px-6 bg-slate-200 border-b flex items-center justify-between"
     >
       <!-- left navbar -->
       <div class="flex">
@@ -28,7 +28,7 @@
           <input
             type="search"
             name="serch"
-            placeholder="Search products..."
+            placeholder="Tìm chức năng ..."
             class="bg-white h-10 w-full xl:w-64 px-5 rounded-lg border text-sm focus:outline-none"
           />
           <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">

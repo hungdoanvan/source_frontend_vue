@@ -1,7 +1,7 @@
 <template>
-  <DefaultLayout>
+  <default-layout>
     <router-view />
-  </DefaultLayout>
+  </default-layout>
 </template>
 
 <script lang="ts">
