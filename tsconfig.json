@@ -16,7 +16,7 @@
     "declaration": true,
     "resolveJsonModule": true,
     "declarationDir": "./types",
-    "types": ["webpack-env"],
+    "types": ["webpack-env","element-plus/global"],
     "paths": {
       "@/*": ["src/*"]
     },
