@@ -21,7 +21,14 @@
       </ol>
     </nav>
     <!-- breadcrumb end -->
-
+    <the-checkbox>hung</the-checkbox>
+    <the-button @click="show()">add</the-button>
+    <the-input v-model="dataInput" />
+    <TheImg />
+    <TextEllipsis class="w-32"
+      >The longest word in any of the major En</TextEllipsis
+    >
+    <the-select v-model="opiton" :options="opitons" />
     <div class="lg:flex justify-between items-center mb-6">
       <p class="text-2xl font-semibold mb-2 lg:mb-0">Good afternoon, Joe!</p>
       <button
@@ -180,6 +187,12 @@
 
 <script>
 import Chart from "chart.js";
+import TheButton from "@/views/components/TheButton.vue";
+import TheInput from "@/views/components/TheInput.vue";
+import TheCheckbox from "@/views/components/TheCheckbox.vue";
+import TheImg from "@/views/components/TheImg.vue";
+import TextEllipsis from "@/views/components/TextEllipsis.vue";
+import TheSelect from "@/views/components/TheSelect.vue";
 
 export default {
   name: "DashboardHome",
@@ -270,8 +283,31 @@ export default {
           },
         },
       },
+      dataInput: "124",
+      opiton: null,
+      opitons: [
+        { label: "hung", value: 1 },
+        { label: "hung3123", value: 2 },
+        { label: "hung5555", value: 3 },
+      ],
     };
   },
+
+  components: {
+    TheButton,
+    TheInput,
+    TheCheckbox,
+    TheImg,
+    TextEllipsis,
+    TheSelect,
+  },
+
+  methods: {
+    show() {
+      console.log(123);
+    },
+  },
+
   mounted() {
     new Chart(document.getElementById("buyers-chart"), this.buyersData);
     new Chart(document.getElementById("reviews-chart"), this.reviewsData);
